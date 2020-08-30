@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+        <meta name="description" content="Resturants">
+        <meta name="keywords" content="Online Resturants,Book Resturants,Order Food Online,Online Delivery Meal,Foodbonda,Foodbonda.com">
+        <meta name="author" content="Pallavi singh">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <style type="text/css">
+        .container{
+              /*position:relative;margin:90px,90px;*/
+        }
+        /*.title{
+            text-align: center;font-family:sans-serif;font-size:80px;
+        }*/
+        .title{
+           /* border-radius: 50%;*/
+            text-shadow: 8px 8px 10px #00008B;
+            position: relative;
+            text-align: center;font-family:sans-serif;font-size:80px;
+            color:#000033;
+        }
+        .jumbotron{
+            background-color: #000080;box-shadow: 0 4px 8px 0 #00008B , 0 6px 20px 0 #00008B;
+           /* background-color: #000080;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+        }
+        #question{
+            background-color:white;; border-radius:25px ;box-shadow: 3px 2px 4px #ffda79;  padding:10px;font-size:30px;
+        }
+        .option{
+            border-radius: 25px; background:white; padding:5px;box-shadow: 3px 2px 4px #ffda79; margin:10px; font-family: sans-serif; font-size: 20px;text-align: center;
+        }
+        #nextButton{
+            position: relative;left: 500px;
+        }
+        #result{
+             color: white; background:#000080; padding:150px;margin:20px;font-size:55px;text-align: center;font-family: sans-serif ;border-radius:50%;
+        }
+        #diaplay{
+            position:relative; left:100px;
+        }
+        body{
+            background-color:white;
+        }
+       nav{
+        background-color: #000080;
+       }
+       #display{
+        color:white;
+        font-size: 20px;
+       }
+       .jumbotron:hover{
+        transform: translate(-5px,-5px);
+        transition: 0.8s;
+        box-shadow: 10px 10px 10px grey;
+       }
+
+
+    </style>
+
+</head>
+<body>
+       
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-sm">
+                <form class="form-inline" action="nethuts_quiz.html">
+   
+                <button class="btn btn-success" type="submit" style="background-color: tomato;font-size:20px">Start</button>
+                </form>
+                </nav>
+            </div>
+        </div>
+        <div id="quizContainer" class="container-fluid" >
+        <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+        <div class="title">Quiz</div>
+        <div class="jumbotron" >
+        <div id="question" class="question"></div><br><br>
+        <label class="option"><input type="radio" name="option" value="1"/><span id="opt1"></span></label><br><br>
+        <label class="option"><input type="radio" name="option" value="2"/><span id="opt2"></span></label><br><br>
+        <label class="option"><input type="radio" name="option" value="3"/><span id="opt3"></span></label><br><br>
+        <label class="option"><input type="radio" name="option" value="4"/><span id="opt4"></span></label><br>
+        <button class="btn btn-success"id="nextButton"  onclick="loadNextQuestion();"> <span class="spinner-grow spinner-grow-sm"></span>Submit</button>
+         <div id="display">
+             
+         </div>
+    </div>
+   </div> 
+   </div> 
+</div>
+    <div id="result" class="container result" style="display:none;"></div>
+    
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+    
+
+
+</body>
+</html>
+
+<!-- id="nextButton"  -->
